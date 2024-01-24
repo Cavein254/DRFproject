@@ -7,6 +7,7 @@ from rest_framework.response import Response
 
 
 class ReactView(APIView):
+    serializer_class = ReactSerializers
     def get(self, request):
         output = [{"employee": output.employee,
                    "department": output.department}
